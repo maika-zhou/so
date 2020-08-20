@@ -2,13 +2,6 @@ package com.dto;
 
 public class QuestionDTO
 {
-//	param.put("title", "CanIcreateaquestionviatheAPI-3");
-//	param.put("body", "Yes you can , just do it.");
-//	param.put("tags", "Test1");
-//	param.put("filter", "default");
-//	param.put("TEAM", "stackoverflow.com/c/ebay-test");
-//	param.put("key", "44qhbGWbJHQSTwR5UGqBJw((");
-//	param.put("site", "stackoverflow.com");
 	
 	
 	private String title;
