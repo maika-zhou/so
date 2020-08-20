@@ -31,21 +31,14 @@ public class SOAction
 	@RequestMapping(value = "/addQuestion", method = RequestMethod.GET)
 	public String addQuestion(QuestionDTO dto) throws RuntimeException, Exception 
 	{ 
-//		param.put("title", "CanIcreateaquestionviatheAPI-5");
-//		param.put("body", "Yes you can , just do it.");
-//		param.put("tags", "Test1");
-//		param.put("filter", "default");
-//		param.put("TEAM", "stackoverflow.com/c/ebay-test");
-//		param.put("key", "44qhbGWbJHQSTwR5UGqBJw((");
-//		param.put("site", "stackoverflow.com");
 		Map<String, String> param = new HashMap<String, String>();
-		param.put("title", dto.getTitle());		
-		param.put("body", dto.getBody());		
-		param.put("tags", dto.getTags());		
-		param.put("filter", dto.getFilter());	
-		param.put("TEAM", dto.getTEAM());		
-		param.put("key", dto.getKey());			
-		param.put("site", dto.getSite());		
+		param.put("title", dto.getTitle());			//Question 	title
+		param.put("body", dto.getBody());			//Question	content
+		param.put("tags", dto.getTags());			//Question 	Tag, if no existed tag, new tag will be created
+		param.put("filter", dto.getFilter());		//Normall set as default
+		param.put("TEAM", dto.getTEAM());			//should be stackoverflow.com/c/XXXXXXX
+		param.put("key", dto.getKey());				//Application Key
+		param.put("site", dto.getSite());			//can be set as stackoverflow.com
 		
 		Map<String, String> header = new HashMap<String, String>();
 		header.put("X-API-Access-Token", token);
