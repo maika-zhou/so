@@ -150,7 +150,6 @@ public class HttpClientUtil {
 			post.setHeader("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.6) Gecko/20100625Firefox/3.6.6 Greatwqs");
 			post.setHeader("Accept", "text/html,application/xhtml+xml,application/xml,application/json");
 			post.setHeader("Accept-Language", "zh-cn,zh");
-			//post.setHeader("X-API-Access-Token", "U8242QKnMYWhJEqbwEqMEQ))");
 			if (header != null && header.size() > 0) {
 				for (String key : header.keySet()) {
 					System.out.println(key+":"+header.get(key));

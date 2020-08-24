@@ -31,6 +31,9 @@ public class SOAction
 	@RequestMapping(value = "/addQuestion", method = RequestMethod.GET)
 	public String addQuestion(QuestionDTO dto) throws RuntimeException, Exception 
 	{ 
+		System.out.println("Token ----------->"+token);
+		
+		
 		Map<String, String> param = new HashMap<String, String>();
 		param.put("title", dto.getTitle());			//Question 	title
 		param.put("body", dto.getBody());			//Question	content
